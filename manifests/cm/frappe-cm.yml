@@ -14,5 +14,6 @@ data:
     {
       "redis_queue": "redis://redis-queue.erp.svc.cluster.local:6379",
       "redis_socketio": "redis://redis-queue.erp.svc.cluster.local:6379",
-      "redis_cache": "redis://redis-cache.erp.svc.cluster.local:6379"
+      "redis_cache": "redis://redis-cache.erp.svc.cluster.local:6379",
+      "socketio_port": "9000"
     }
