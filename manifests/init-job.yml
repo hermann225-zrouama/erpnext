@@ -80,10 +80,10 @@ spec:
             echo '{"redis_queue": "redis://redis-queue.erp.svc.cluster.local:6379", "redis_socketio": "redis://redis-queue.erp.svc.cluster.local:6379", "redis_cache": "redis://redis-cache.erp.svc.cluster.local:6379"}' > /home/frappe/frappe-bench/sites/common_site_config.json
           fi
 
-          # isntallation de hrms
-          bench get-app hrms
-          bench --site ${SITE_NAME} install-app hrms
-          bench --site ${SITE_NAME} migrate
+          # installation de hrms
+          # bench get-app hrms
+          # bench --site ${SITE_NAME} install-app hrms
+          # bench --site ${SITE_NAME} migrate
         env:
         - name: SITE_NAME
           valueFrom:
