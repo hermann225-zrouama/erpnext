@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: erpnext-ingress
+  namespace: erp
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: erp.amoaman.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: frappe-frontend
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - erp.amoaman.com
+    secretName: erp-tls-cert
+status:
+  loadBalancer:
+    ingress:
+    - ip: 149.202.41.3
+    - ip: 195.35.1.206
+    - ip: 195.35.1.215
+    - ip: 92.222.10.57
