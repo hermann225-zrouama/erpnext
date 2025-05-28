@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frappe-worker-long
-  namespace: erp
+  namespace: erp-sandbox
 spec:
   replicas: 1
   selector:
