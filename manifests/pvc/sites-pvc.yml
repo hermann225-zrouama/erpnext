@@ -11,9 +11,3 @@ spec:
   resources:
     requests:
       storage: 10Gi
-
-
-
-      server: https://195.35.1.215:9345
-token: K10959ba43f1f6ba377cac9e2506ff1dc7b406a7630de0e04b526709a8f2b9b8193::server:97baa3a7227a2880764b4e15965e90be
-with-node-id: true
